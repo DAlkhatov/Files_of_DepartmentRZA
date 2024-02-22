@@ -123,7 +123,7 @@ $ git clone git@github.com:%ВАШ_АККАУНТ%/git-basics.git
 flowchart TD;
   A[untracked] -- "git add" --> B[staged];
   B -- changes --> C[modified];
-  B -- "git commit" --> D(tracked/comitted);
+  B -- "git commit" --> D{tracked/comitted};
   C -- "git add" --> B;
   D -- changes --> C;
 ```
