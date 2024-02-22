@@ -122,9 +122,10 @@ $ git clone git@github.com:%ВАШ_АККАУНТ%/git-basics.git
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  modified -- "git add" --> staged;
+  staged -- "changes" --> modified;
+  staged -- "git commit" --> tracked/comitted;
+  tracked/comitted -- "changes" --> modified
 
-%% стрелка без текста для примера: 
-  A --> B;
+
 ```
-
