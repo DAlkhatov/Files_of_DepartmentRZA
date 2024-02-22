@@ -118,3 +118,13 @@ $ git push
 $ git clone git@github.com:%ВАШ_АККАУНТ%/git-basics.git
 # укажите адрес репозитория
 ```
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+```
+
